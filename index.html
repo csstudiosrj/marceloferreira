@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marcelo Ferreira | Sociedade de Advogados</title>
+    
+    <!-- Open Graph / SEO -->
+    <meta property="og:title" content="Marcelo Ferreira | Sociedade de Advogados">
+    <meta property="og:description" content="Referência em soluções jurídicas voltadas ao setor bancário e financeiro no Rio de Janeiro. Proteção estratégica para o seu patrimônio.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://marceloferreira.csstudios.site/"> 
+    <meta property="og:image" content="https://marceloferreira.csstudios.site/capa.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    
+    <!-- Fonts & Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif:['Cinzel', 'serif'],
+                    },
+                    colors: {
+                        corpDark: '#020617', /* Slate 950 - Fundo principal */
+                        corpCard: '#0F172A', /* Slate 900 - Fundo de cards */
+                        corpBlue: '#1D4ED8', /* Royal Blue - Destaques */
+                        corpAccent: '#38BDF8', /* Sky Blue - Textos de destaque */
+                        corpLight: '#F8FAFC' /* Slate 50 - Textos claros */
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        html { scroll-behavior: smooth; background-color: #020617; }
+        
+        /* Glassmorphism Corporativo */
+        .glass-nav {
+            background: rgba(2, 6, 23, 0.85);
+            backdrop-filter: blur(16px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .corp-panel {
+            background: linear-gradient(145deg, #0F172A 0%, #020617 100%);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: all 0.4s ease;
+        }
+        .corp-panel:hover {
+            border-color: rgba(56, 189, 248, 0.3);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(29, 78, 216, 0.15);
+        }
+
+        /* Fundo Hero: Arquitetura Moderna / Centro Financeiro */
+        .hero-bg {
+            background: linear-gradient(to right, rgba(2, 6, 23, 0.95) 30%, rgba(2, 6, 23, 0.7) 100%), 
+                        url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2000&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: #020617; }
+        ::-webkit-scrollbar-thumb { background: #1D4ED8; border-radius: 4px; }
+    </style>
+</head>
+<body class="bg-corpDark text-slate-300 font-sans overflow-x-hidden selection:bg-corpBlue selection:text-white">
+
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 glass-nav py-4 transition-all duration-300">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            
+            <a href="#" class="flex items-center gap-4">
+                <div class="w-10 h-10 border border-corpAccent/50 flex items-center justify-center rounded bg-corpCard shadow-[0_0_10px_rgba(29,78,216,0.3)]">
+                    <span class="font-serif font-bold text-corpAccent text-lg">MF</span>
+                </div>
+                <div class="flex flex-col">
+                    <span class="font-serif font-bold text-lg text-white tracking-wide leading-none uppercase">Marcelo Ferreira</span>
+                    <span class="text-[8px] font-semibold uppercase tracking-[0.25em] text-corpAccent mt-1">Sociedade de Advogados</span>
+                </div>
+            </a>
+
+            <div class="hidden md:flex items-center gap-8 text-[10px] font-semibold uppercase tracking-[0.15em] text-slate-400">
+                <a href="#escritorio" class="hover:text-corpAccent transition-colors">O Escritório</a>
+                <a href="#atuacao" class="hover:text-corpAccent transition-colors">Áreas de Atuação</a>
+                <a href="#depoimentos" class="hover:text-corpAccent transition-colors">Resultados</a>
+                <a href="#contato" class="hover:text-corpAccent transition-colors">Contato</a>
+            </div>
+
+            <a href="https://wa.me/552135702405" target="_blank" class="bg-corpBlue text-white px-6 py-2.5 text-[10px] font-bold tracking-widest hover:bg-blue-600 transition-all flex items-center gap-2 uppercase rounded shadow-lg shadow-corpBlue/20">
+                <i class="fas fa-briefcase text-sm"></i> Assessoria Jurídica
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center pt-20 hero-bg z-10 border-b border-white/5">
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="max-w-3xl" data-aos="fade-right" data-aos-duration="1200">
+                
+                <div class="inline-flex items-center gap-3 border border-corpAccent/20 bg-corpCard/80 px-4 py-2 rounded-full mb-8 backdrop-blur-sm">
+                    <div class="flex text-corpAccent text-xs">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <span class="text-white font-medium text-[10px] uppercase tracking-widest">4.8 de Avaliação no Google</span>
+                </div>
+
+                <h1 class="text-4xl md:text-6xl font-serif font-bold text-white leading-tight mb-6">
+                    Autoridade em Direito <span class="text-corpAccent">Bancário</span> e Financeiro.
+                </h1>
+                
+                <p class="text-base md:text-lg text-slate-400 mb-10 font-light max-w-xl leading-relaxed">
+                    Atuação estratégica na defesa de instituições financeiras, empresas e indivíduos. Protegemos seu patrimônio contra abusos, litígios e cobranças indevidas com excelência consolidada.
+                </p>
+                
+                <div class="flex flex-wrap gap-6 items-center">
+                    <a href="#contato" class="bg-corpBlue text-white px-10 py-4 font-semibold hover:bg-blue-600 transition-all uppercase tracking-widest text-xs rounded shadow-[0_0_20px_rgba(29,78,216,0.4)]">
+                        Agendar Consultoria
+                    </a>
+                    <div class="flex flex-col border-l border-white/20 pl-6">
+                        <span class="text-white font-serif text-lg">Atendimento Especializado</span>
+                        <span class="text-[10px] uppercase tracking-widest text-corpAccent mt-1">Rio de Janeiro, RJ</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Valores / Diferenciais -->
+    <section id="escritorio" class="py-20 bg-corpCard relative z-20">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="corp-panel p-10 rounded-lg border-t-2 border-t-corpBlue" data-aos="fade-up" data-aos-delay="100">
+                    <i class="fas fa-chart-line text-3xl text-corpAccent mb-6"></i>
+                    <h3 class="text-white font-serif font-bold text-xl mb-3">Visão Estratégica</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed font-light">Compreendemos a dinâmica do mercado financeiro. Nossas soluções são desenhadas para mitigar riscos e otimizar resultados econômicos.</p>
+                </div>
+                <div class="corp-panel p-10 rounded-lg" data-aos="fade-up" data-aos-delay="200">
+                    <i class="fas fa-shield-halved text-3xl text-corpAccent mb-6"></i>
+                    <h3 class="text-white font-serif font-bold text-xl mb-3">Segurança Jurídica</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed font-light">Equipe altamente qualificada atuando na prevenção de litígios e na blindagem de contratos e operações de crédito.</p>
+                </div>
+                <div class="corp-panel p-10 rounded-lg" data-aos="fade-up" data-aos-delay="300">
+                    <i class="fas fa-bolt text-3xl text-corpAccent mb-6"></i>
+                    <h3 class="text-white font-serif font-bold text-xl mb-3">Resolução Ágil</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed font-light">Foco na celeridade. Priorizamos negociações e acordos extrajudiciais vantajosos, evitando o desgaste prolongado do contencioso.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Áreas de Atuação -->
+    <section id="atuacao" class="py-32 bg-corpDark border-y border-white/5">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-20" data-aos="fade-up">
+                <span class="text-[10px] font-bold uppercase tracking-[0.4em] text-corpAccent mb-4 block">Nossa Expertise</span>
+                <h2 class="text-3xl md:text-5xl font-serif font-bold text-white tracking-tight">Setor <span class="text-slate-500">Bancário e Financeiro</span></h2>
+                <div class="w-16 h-1 bg-corpBlue mx-auto mt-6 rounded"></div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                
+                <div class="corp-panel p-10 rounded-lg group" data-aos="fade-right">
+                    <div class="flex justify-between items-start mb-6">
+                        <h3 class="text-xl font-serif font-bold text-white">Revisão de Contratos</h3>
+                        <i class="fas fa-file-signature text-2xl text-corpAccent opacity-50 group-hover:opacity-100 transition-opacity"></i>
+                    </div>
+                    <p class="text-slate-400 text-sm leading-relaxed font-light">Análise minuciosa de contratos bancários, financiamentos e empréstimos para identificação e anulação de cláusulas abusivas e juros extorsivos.</p>
+                </div>
+
+                <div class="corp-panel p-10 rounded-lg group" data-aos="fade-left">
+                    <div class="flex justify-between items-start mb-6">
+                        <h3 class="text-xl font-serif font-bold text-white">Defesa em Execuções</h3>
+                        <i class="fas fa-scale-balanced text-2xl text-corpAccent opacity-50 group-hover:opacity-100 transition-opacity"></i>
+                    </div>
+                    <p class="text-slate-400 text-sm leading-relaxed font-light">Representação judicial robusta em ações de cobrança, execuções fiscais e bancárias, protegendo o patrimônio da empresa ou do indivíduo.</p>
+                </div>
+
+                <div class="corp-panel p-10 rounded-lg group" data-aos="fade-right" data-aos-delay="100">
+                    <div class="flex justify-between items-start mb-6">
+                        <h3 class="text-xl font-serif font-bold text-white">Negociação de Dívidas</h3>
+                        <i class="fas fa-handshake-angle text-2xl text-corpAccent opacity-50 group-hover:opacity-100 transition-opacity"></i>
+                    </div>
+                    <p class="text-slate-400 text-sm leading-relaxed font-light">Intermediação direta com instituições financeiras para a realização de acordos extrajudiciais, renegociação de passivos e quitação de débitos.</p>
+                </div>
+
+                <div class="corp-panel p-10 rounded-lg group" data-aos="fade-left" data-aos-delay="100">
+                    <div class="flex justify-between items-start mb-6">
+                        <h3 class="text-xl font-serif font-bold text-white">Consultoria Preventiva</h3>
+                        <i class="fas fa-building-columns text-2xl text-corpAccent opacity-50 group-hover:opacity-100 transition-opacity"></i>
+                    </div>
+                    <p class="text-slate-400 text-sm leading-relaxed font-light">Assessoria jurídica contínua para instituições financeiras e corporações, garantindo conformidade legal (compliance) em operações de crédito.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Prova Social (Avaliações do Google) -->
+    <section id="depoimentos" class="py-24 bg-corpCard">
+        <div class="container mx-auto px-6">
+            <div class="grid lg:grid-cols-3 gap-12 items-center">
+                <div class="lg:col-span-1" data-aos="fade-right">
+                    <h2 class="text-3xl md:text-4xl font-serif font-bold text-white mb-6 leading-tight">Resultados que geram <span class="text-corpAccent">confiança.</span></h2>
+                    <div class="flex items-center gap-4 mb-4 border-l-2 border-corpBlue pl-4">
+                        <span class="text-5xl font-serif font-bold text-white">4,8</span>
+                        <div class="flex flex-col">
+                            <div class="flex text-corpAccent text-sm mb-1">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <span class="text-[10px] text-slate-400 uppercase tracking-widest font-semibold">20 Avaliações Google</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-2 grid md:grid-cols-2 gap-6">
+                    <div class="corp-panel p-8 rounded-lg" data-aos="fade-up" data-aos-delay="100">
+                        <div class="flex text-corpAccent text-xs mb-4"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <p class="italic text-slate-300 mb-6 text-sm leading-relaxed font-light">"Problema prontamente resolvido, equipe muito atenciosa parabéns!!"</p>
+                        <div class="flex items-center gap-3">
+                            <div class="w-8 h-8 rounded bg-corpDark border border-white/10 flex items-center justify-center text-xs font-bold text-white">J</div>
+                            <span class="font-semibold text-[10px] uppercase tracking-widest text-slate-400">Julio Barroso</span>
+                        </div>
+                    </div>
+                    <div class="corp-panel p-8 rounded-lg" data-aos="fade-up" data-aos-delay="200">
+                        <div class="flex text-corpAccent text-xs mb-4"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <p class="italic text-slate-300 mb-6 text-sm leading-relaxed font-light">"Excelentes profissionais, realmente os melhores, show."</p>
+                        <div class="flex items-center gap-3">
+                            <div class="w-8 h-8 rounded bg-corpDark border border-white/10 flex items-center justify-center text-xs font-bold text-white">C</div>
+                            <span class="font-semibold text-[10px] uppercase tracking-widest text-slate-400">Claudio Venâncio da Silva</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato & Mapa -->
+    <section id="contato" class="py-32 bg-corpDark relative border-t border-white/5">
+        <div class="container mx-auto px-6">
+            <div class="grid lg:grid-cols-2 gap-16">
+                
+                <!-- Info & Mapa -->
+                <div data-aos="fade-right">
+                    <h2 class="text-3xl md:text-4xl font-serif font-bold text-white mb-6">Atendimento <span class="text-corpAccent">Corporativo</span></h2>
+                    <p class="text-slate-400 mb-12 font-light">Agende uma reunião com nossos especialistas para analisarmos a viabilidade jurídica e financeira do seu caso.</p>
+                    
+                    <div class="space-y-8 mb-12">
+                        <div class="flex items-start gap-6">
+                            <div class="w-12 h-12 bg-corpCard border border-white/5 flex items-center justify-center text-corpAccent text-xl rounded shrink-0"><i class="fas fa-building"></i></div>
+                            <div>
+                                <h4 class="text-white font-semibold text-sm uppercase tracking-widest mb-1">Sede do Escritório</h4>
+                                <p class="text-slate-400 text-sm font-light">R. Felisbelo Freire, 486 - Ramos<br>Rio de Janeiro - RJ, 21031-250</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-6">
+                            <div class="w-12 h-12 bg-corpCard border border-white/5 flex items-center justify-center text-corpAccent text-xl rounded shrink-0"><i class="fas fa-clock"></i></div>
+                            <div>
+                                <h4 class="text-white font-semibold text-sm uppercase tracking-widest mb-1">Horário Comercial</h4>
+                                <p class="text-slate-400 text-sm font-light">Segunda a Sexta, a partir das 09:00</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-6">
+                            <div class="w-12 h-12 bg-corpCard border border-white/5 flex items-center justify-center text-corpAccent text-xl rounded shrink-0"><i class="fas fa-phone-alt"></i></div>
+                            <div>
+                                <h4 class="text-white font-semibold text-sm uppercase tracking-widest mb-1">Telefone de Contato</h4>
+                                <p class="text-slate-400 text-sm font-light">(21) 3570-2405</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="h-64 w-full border border-white/10 rounded overflow-hidden">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3676.025!2d-43.255866!3d-22.864448!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zRMOpY2ltbyB0ZXJjZWlybyBwYXJhbGVsbyBzdWw!5e0!3m2!1spt-BR!2sbr!4v1710000000000" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" class="filter grayscale hover:grayscale-0 transition duration-700"></iframe>
+                    </div>
+                </div>
+
+                <!-- Formulário Web3Forms -->
+                <div data-aos="fade-left">
+                    <div class="corp-panel p-10 md:p-14 rounded-lg relative">
+                        <h3 class="text-2xl font-serif font-bold text-white mb-2">Solicitação de Análise</h3>
+                        <p class="text-slate-400 text-sm mb-8 font-light">Preencha o formulário abaixo para um contato inicial seguro e sigiloso.</p>
+                        
+                        <form action="https://api.web3forms.com/submit" method="POST" class="space-y-6">
+                            <!-- Chave CS Studios -->
+                            <input type="hidden" name="access_key" value="866dc7f0-7f5a-48ed-8c07-0f76c71689a9">
+                            <input type="hidden" name="subject" value="Novo Contato - Site Marcelo Ferreira Advogados">
+                            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+                            <div>
+                                <label class="text-[10px] uppercase font-semibold tracking-widest text-slate-500 block mb-2">Nome / Razão Social</label>
+                                <input type="text" name="name" required class="w-full bg-corpDark border border-white/10 px-5 py-4 text-white focus:border-corpBlue outline-none transition-colors rounded">
+                            </div>
+                            <div class="grid grid-cols-2 gap-4">
+                                <div>
+                                    <label class="text-[10px] uppercase font-semibold tracking-widest text-slate-500 block mb-2">E-mail Corporativo</label>
+                                    <input type="email" name="email" required class="w-full bg-corpDark border border-white/10 px-5 py-4 text-white focus:border-corpBlue outline-none transition-colors rounded">
+                                </div>
+                                <div>
+                                    <label class="text-[10px] uppercase font-semibold tracking-widest text-slate-500 block mb-2">Telefone</label>
+                                    <input type="text" name="phone" required class="w-full bg-corpDark border border-white/10 px-5 py-4 text-white focus:border-corpBlue outline-none transition-colors rounded">
+                                </div>
+                            </div>
+                            <div>
+                                <label class="text-[10px] uppercase font-semibold tracking-widest text-slate-500 block mb-2">Resumo da Demanda Financeira</label>
+                                <textarea name="message" rows="4" required class="w-full bg-corpDark border border-white/10 px-5 py-4 text-white focus:border-corpBlue outline-none transition-colors resize-none rounded"></textarea>
+                            </div>
+                            
+                            <button type="submit" class="w-full bg-corpBlue text-white font-semibold py-5 hover:bg-blue-600 transition-all uppercase tracking-widest text-xs rounded mt-4 shadow-[0_0_15px_rgba(29,78,216,0.3)]">
+                                Enviar Mensagem
+                            </button>
+
+                            <!-- Compliance OAB -->
+                            <p class="text-center text-[10px] text-slate-500 mt-6 font-light leading-relaxed">
+                                <i class="fas fa-lock mr-1"></i> As informações enviadas são protegidas por rigoroso sigilo profissional, conforme normas da OAB.
+                            </p>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 border-t border-white/5 bg-corpCard">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6 mb-8 pb-8 border-b border-white/5">
+                <div class="flex flex-col items-center md:items-start">
+                    <span class="font-serif font-bold text-xl text-white tracking-wide uppercase leading-none">Marcelo Ferreira</span>
+                    <span class="text-[8px] font-semibold uppercase tracking-[0.2em] text-corpAccent mt-1">Sociedade de Advogados</span>
+                </div>
+                <div class="flex gap-6 text-slate-500">
+                    <a href="https://wa.me/552135702405" target="_blank" class="hover:text-corpAccent transition"><i class="fab fa-whatsapp text-xl"></i></a>
+                    <a href="#contato" class="hover:text-corpAccent transition"><i class="fas fa-envelope text-xl"></i></a>
+                </div>
+            </div>
+            
+            <div class="flex flex-col md:flex-row justify-between items-center gap-4 text-[9px] uppercase tracking-[0.2em] text-slate-500 font-semibold">
+                <p>Atendimento em conformidade com o Provimento 205/2021 da OAB.</p>
+                <p>
+                    Desenvolvido por 
+                    <a href="https://www.csstudios.site" target="_blank" class="text-corpAccent hover:text-white transition hover:underline">CS studios</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- AOS Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 50,
+        });
+
+        // Navbar Effect
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if(window.scrollY > 50) {
+                nav.classList.add('shadow-2xl');
+                nav.classList.remove('py-4');
+                nav.classList.add('py-3');
+            } else {
+                nav.classList.remove('shadow-2xl');
+                nav.classList.remove('py-3');
+                nav.classList.add('py-4');
+            }
+        });
+    </script>
+</body>
+</html>
